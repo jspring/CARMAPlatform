@@ -136,9 +136,10 @@
   </group>
 
   <!-- Ray Ground Filter -->
+  <!-- TODO remove for testing
   <remap from="/points_raw" to="$(optenv CARMA_INTR_NS)/lidar/points_raw"/>
   <include file="$(find points_preprocessor)/launch/ray_ground_filter.launch">
     <arg name="no_ground_point_topic" value="points_no_ground" />
     <arg name="ground_point_topic" value="points_ground" />
-  </include>
+  </include>-->
 </launch>
