@@ -115,6 +115,12 @@
     </include>
   </group>
 
+<!-- PATH Stack -->
+  <group ns="$(env PATH_NS)">
+    <include file="$(find carma)/launch/carma_comm.launch">
+    </include>
+</group>
+
   <!-- Environment Perception Stack -->
   <group ns="$(env CARMA_ENV_NS)">
     <include file="$(find carma)/launch/environment.launch">
