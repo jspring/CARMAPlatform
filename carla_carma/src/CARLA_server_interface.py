@@ -128,6 +128,12 @@ def main():
         '--hybrid',
         action='store_true',
         help='Enable')
+#    argparser.add_argument(
+#        '__log:=/home/carma/.ros/log/019abf2c-bfef-11ea-9f54-7085c2ae6ad6/CARLA_server-1.lo',
+#        )
+#    argparser.add_argument(
+#        '__name:=CARLA_server',
+#        )
     args = argparser.parse_args()
 
     logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.INFO)
